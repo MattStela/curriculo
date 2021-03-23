@@ -2,32 +2,34 @@
   <v-app>
     <v-main>
       <Menu/>
-      <v-container fluid>
+    <v-container fluid>
         <v-container>
-<template>
-  <div>
-    <v-avatar
-    color="primary"
-    size="128"
-    
-    ></v-avatar>
-    
-   
+            <template>
+              <div>
 
-    <v-card
-      class="mt-n12 mx-auto"
-      elevation="12"
-      height="200"
-      max-width="300"
-      color="secondary"
-    >
-    
-    </v-card>
+                <v-avatar size="150" color="black" class="mt-n0 mx-auto">
+                  <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="Matts">
+                </v-avatar>
 
-  </div>
-</template>
+                <v-card
+                class="mt-n12 mx-auto"
+                elevation="20"
+                height="460"
+                max-width="800"
+                color="WHITE"
+                text-align="center">
+
+                <h1 class="ophk">Matheus Alves Stela</h1>
+                <h2 class="ophk">26 anos</h2>
+                <h2 class="ophk">matheus.alves.stela@gmail.com</h2>
+                <h2 class="ophk">São paulo - SP</h2>
+
+                </v-card>
+
+              </div>
+            </template>
         </v-container>
-      <!-- If using vue-router -->
+        <!-- If using vue-router -->
       <router-view></router-view>
 
     </v-container>
@@ -53,3 +55,9 @@ export default {
   }),
 };
 </script>
+
+<style>
+.ophk{
+  margin-left:80px
+}
+</style>
