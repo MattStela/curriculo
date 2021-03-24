@@ -1,5 +1,5 @@
 <template >
-    <v-avatar fixed size="300" color="black" class="mt-n1 mx-n0">
+    <v-avatar fixed size="600" color="black" class="mt-n1 mx-n0">
         <img src="../assets/Matts.jpg" alt="Matts">
     </v-avatar>
 </template>

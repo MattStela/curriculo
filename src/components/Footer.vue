@@ -9,7 +9,7 @@
       flat
       tile
     >
-      <v-card-title class="teal">
+      <v-card-title class="">
         <strong class="subheading">Acesse as minhas redes sociais!</strong>
 
         <v-spacer></v-spacer>
@@ -29,10 +29,6 @@
           </v-icon>
         </v-btn>
       </v-card-title>
-
-      <v-card-text class="py-2 white--text text-right">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-card-text>
     </v-card>
   </v-footer>
 </template>
@@ -42,6 +38,7 @@
     data: () => ({
         
       icons: [
+
         'mdi-facebook',
         'mdi-twitter',
         'mdi-linkedin',
