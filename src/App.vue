@@ -1,53 +1,64 @@
 <template>
   <v-app>
-    <v-main>
-      <Menu/>
-    <v-container fluid>
-        <v-container>
-            <template>
-              <div>
+    <v-main style="background-color: black">
+      <Loginbar />
+      <Menu />
+      <v-container>
+        <div style="margin-top: 5%">
+          <!-- Avatar da página principal -->
+          <Avatar />
+        </div>
+        
+        <v-card
+          style="height: 400px; margin: 2% 5% 0% 0%"
+          color="blue-grey darken-4"
+          
+        >
 
-                <v-avatar size="150" color="black" class="mt-n0 mx-auto">
-                  <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="Matts">
-                </v-avatar>
+          <v-container>
+            <v-card
+              color="blue-grey darken-3"
+              style="height: 340px; margin: -10% -10% 0% 20%"
+            >
+              <!-- Conteúdo da página -->
+              <v-container>
+                <v-container>
+                  <h1 class="font-weight-medium white--text">
+                    matheus.alves.stela@gmail.com<br />
+                    <br/>
+                    (11) 94968-3673<br />
+                    26 anos<br />
+                    São Paulo - SP<br />
+                    Bairro: Itaquera
+                  </h1>
+                </v-container>
+              </v-container>
+            </v-card>
+          </v-container>
+        </v-card>
 
-                <v-card
-                class="mt-n12 mx-auto"
-                elevation="20"
-                height="460"
-                max-width="800"
-                color="WHITE"
-                text-align="center">
-
-                <h1 class="ophk">Matheus Alves Stela</h1>
-                <h2 class="ophk">26 anos</h2>
-                <h2 class="ophk">matheus.alves.stela@gmail.com</h2>
-                <h2 class="ophk">São paulo - SP</h2>
-
-                </v-card>
-
-              </div>
-            </template>
-        </v-container>
         <!-- If using vue-router -->
-      <router-view></router-view>
-
-    </v-container>
-      <Footer/>
+        <router-view></router-view>
+      </v-container>
+      <Footer />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Footer from './components/Footer';
-import Menu from './components/Menu';
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import Loginbar from "./components/Loginbar";
+import Avatar from "./components/Avatar";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     Menu,
-    Footer
+    Footer,
+    Loginbar,
+    Avatar,
   },
 
   data: () => ({
@@ -57,7 +68,7 @@ export default {
 </script>
 
 <style>
-.ophk{
-  margin-left:80px
+.ophk {
+  margin-left: 80px;
 }
 </style>

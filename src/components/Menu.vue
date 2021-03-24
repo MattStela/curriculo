@@ -2,13 +2,13 @@
     <v-card>
       <v-tabs
         fixed-tabs
-        background-color="black"
+        background-color="blue-grey darken-4"
         center-active
         dark
         >
-        <v-tab> Dados pessoais </v-tab>
-        <v-tab> Experiências </v-tab>
-        <v-tab> Formação acadêmica </v-tab>
+        <v-tab> <h2 class="font-weight-medium">Dados pessoais</h2> </v-tab>
+        <v-tab> <h2 class="font-weight-medium">Experiências</h2> </v-tab>
+        <v-tab> <h2 class="font-weight-medium">Formação acadêmica</h2> </v-tab>
       </v-tabs>
     </v-card>
 </template>
